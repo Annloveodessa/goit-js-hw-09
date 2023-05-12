@@ -1,8 +1,6 @@
 const startBtn = document.querySelector("[data-start]");
 const stopBtn = document.querySelector("[data-stop]");
 
-
-
 startBtn.addEventListener('click', changeColor);
 
 stopBtn.addEventListener('click', clearColor);
@@ -18,7 +16,6 @@ function changeColor() {
     isDisabledBtn(true, false);
 }
 
-
 function clearColor() {
     clearInterval(intervalId);
     isDisabledBtn(false, true);
@@ -29,7 +26,6 @@ function isDisabledBtn(startDisabled, stopDisabled) {
     startBtn.disabled = startDisabled;
     stopBtn.disabled = stopDisabled;
 }
-
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
