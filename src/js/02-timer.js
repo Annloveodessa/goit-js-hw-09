@@ -1,4 +1,4 @@
-// Описан в документации
+
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
@@ -55,8 +55,6 @@ function startTimer() {
  
 }
 
-
-// Дополнительный импорт стилей
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -74,11 +72,6 @@ const options = {
 
 flatpickr(pickerId, options);
 
-
-// function convertFn({ days, hours, minutes, seconds }) {
-//     date.days = 
-
-// }
 
 function pad(value) {
     return String(value).padStart(2, "0");
